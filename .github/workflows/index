@@ -3,21 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Game</title>
+    <title>Medieval Trading Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="game-container">
-        <h1>Trading Game</h1>
+        <h1>Medieval Trading Game</h1>
         <div id="city1" class="city">
             <h2>City 1</h2>
-            <p>Goods: <span id="city1-goods">0</span></p>
-            <button onclick="trade('city1')">Trade</button>
+            <p>Wheat: <span id="city1-wheat">0</span></p>
+            <p>Iron: <span id="city1-iron">0</span></p>
+            <p>Wood: <span id="city1-wood">0</span></p>
+            <button onclick="trade('city1', 'wheat')">Trade Wheat</button>
+            <button onclick="trade('city1', 'iron')">Trade Iron</button>
+            <button onclick="trade('city1', 'wood')">Trade Wood</button>
         </div>
         <div id="city2" class="city">
             <h2>City 2</h2>
-            <p>Goods: <span id="city2-goods">0</span></p>
-            <button onclick="trade('city2')">Trade</button>
+            <p>Wheat: <span id="city2-wheat">0</span></p>
+            <p>Iron: <span id="city2-iron">0</span></p>
+            <p>Wood: <span id="city2-wood">0</span></p>
+            <button onclick="trade('city2', 'wheat')">Trade Wheat</button>
+            <button onclick="trade('city2', 'iron')">Trade Iron</button>
+            <button onclick="trade('city2', 'wood')">Trade Wood</button>
+        </div>
+        <div id="city3" class="city">
+            <h2>City 3</h2>
+            <p>Wheat: <span id="city3-wheat">0</span></p>
+            <p>Iron: <span id="city3-iron">0</span></p>
+            <p>Wood: <span id="city3-wood">0</span></p>
+            <button onclick="trade('city3', 'wheat')">Trade Wheat</button>
+            <button onclick="trade('city3', 'iron')">Trade Iron</button>
+            <button onclick="trade('city3', 'wood')">Trade Wood</button>
+        </div>
+        <div id="city4" class="city">
+            <h2>City 4</h2>
+            <p>Wheat: <span id="city4-wheat">0</span></p>
+            <p>Iron: <span id="city4-iron">0</span></p>
+            <p>Wood: <span id="city4-wood">0</span></p>
+            <button onclick="trade('city4', 'wheat')">Trade Wheat</button>
+            <button onclick="trade('city4', 'iron')">Trade Iron</button>
+            <button onclick="trade('city4', 'wood')">Trade Wood</button>
+        </div>
+        <div id="city5" class="city">
+            <h2>City 5</h2>
+            <p>Wheat: <span id="city5-wheat">0</span></p>
+            <p>Iron: <span id="city5-iron">0</span></p>
+            <p>Wood: <span id="city5-wood">0</span></p>
+            <button onclick="trade('city5', 'wheat')">Trade Wheat</button>
+            <button onclick="trade('city5', 'iron')">Trade Iron</button>
+            <button onclick="trade('city5', 'wood')">Trade Wood</button>
+        </div>
+        <div id="player-inventory">
+            <h2>Player Inventory</h2>
+            <p>Gold: <span id="player-gold">100</span></p>
+            <p>Wheat: <span id="player-wheat">0</span></p>
+            <p>Iron: <span id="player-iron">0</span></p>
+            <p>Wood: <span id="player-wood">0</span></p>
         </div>
     </div>
     <script src="game.js"></script>
