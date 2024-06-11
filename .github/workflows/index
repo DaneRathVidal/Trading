@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Trading Game</h1>
+        <div id="city1" class="city">
+            <h2>City 1</h2>
+            <p>Goods: <span id="city1-goods">0</span></p>
+            <button onclick="trade('city1')">Trade</button>
+        </div>
+        <div id="city2" class="city">
+            <h2>City 2</h2>
+            <p>Goods: <span id="city2-goods">0</span></p>
+            <button onclick="trade('city2')">Trade</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
